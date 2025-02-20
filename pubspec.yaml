@@ -7,8 +7,11 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
+  dartz: ^0.10.1
+  equatable: ^2.0.7
   flutter:
     sdk: flutter
+  image_picker: ^1.1.2
   sqflite: ^2.4.1
 
 dev_dependencies:

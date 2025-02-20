@@ -1,3 +1,4 @@
+import 'package:bookshelf_app/presentation/widgets/add_book_widget.dart';
 import 'package:bookshelf_app/presentation/widgets/book_card.dart';
 import 'package:flutter/material.dart';
 
@@ -19,9 +20,10 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Список книг в библиотеке'),
         actions: [
           IconButton(
-            onPressed: () {
-              
-            }, 
+            onPressed: () => showDialog<String>(
+              context: context,
+              builder: (BuildContext context) => AddBookWidget()
+            ),
             icon: const Icon(Icons.add)
             )
         ],
